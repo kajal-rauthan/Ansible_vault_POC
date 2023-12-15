@@ -1,0 +1,9 @@
+---
+- name: Example Ansible playbook for Handlers
+  hosts: all
+  vars_files:
+    - /home/kajal/ansible-project/group_vars/my_vault_with_bas64_pass.yml
+  become: yes
+  remote_user: kajal
+  roles:
+    - custom-role
